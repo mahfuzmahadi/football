@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-}
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+}
 .topnav {
   overflow: hidden;
   background-color: #2D25A0;
-  width: 90%;
   height: 80px;
-  margin-left: 67px;
 
 }
 
@@ -31,92 +34,68 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
 .banner{
-  background-color: #2D25A0;
-  font-family: 'Poppins', sans-serif;
-  margin-top: 30px;
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.last-banner{
+    background-color: #2D25A0;
+    height: 677px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.leftcontent{
+    width: 75%;
+    padding-left: 116px;
+    padding-top: 207px;
+}
+.leftcontent h1{
+    color: white;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 80px;
+    margin: 0px;
+    padding-bottom: 27px;
+}
+.leftcontent a{
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px 10px 24px;
+    background-color: #E02C6D;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.leftcontent i{
+ padding-left: 10px;
+}
+.leftcontent p{
+    font-size: 15px;
+}
+.rightcontent {
+    width: 50%;
+    padding: 153px 120px 86px 40px;
+}
+.rightcontent img{
+  width: 556px;
+  height: 438px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-.topSection {
-    width: 100%;
-    height: 390px;
-    display: flex;
-}
-
-.topLeft {
-    width: 45%;
-    height: 420px;
-  
-    margin-left: 10%;
-    font-size: 2em;
-}
-
-.button {
-        background-color: #E02C6D; 
-        border: none;
-        color: white;
-        padding: 10px 22px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-      }
-
-.topRight {
-    width: 45%;
-    height: 520px;
-  
-    background-position-x: 60px;
-}
-.topRight img{
-    width: 62%;
-    height: 320px;
-    margin-left: 160px;
-    margin-top: 30px;
-}
-@media (min-width: 400px) {
-    .players-content{
-      flex-direction: column;
-      grid-template-columns: (1, 1fr);
-    }
-  }
-
+/* ====ranking==== */
 .ranking-area{
     margin-bottom: 100px;
     padding: 0 5%;
 }
 
 .players-content{
-    display: flex;
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-direction: row;
+    column-gap: 30px;
 
 }
 .players{
@@ -150,48 +129,257 @@ body {
     width: 100%;
 }
 
-.mid-banner{
 
-  font-family: 'Poppins', sans-serif;
-  margin-top: 30px;
+
+.more-ranking h1{
+    font-weight: 500;
+    font-size: 30px;
+    color: #0f132b;
+    text-align: center;
+    border: 0px;
 }
 
-
-.mid-topSection {
-    width: 100%;
-    height: 390px;
+.more-players{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    column-gap: 50px;
+    row-gap:30px;
+}
+.player-list {
+    width: 560px;
+    height: 170px;
+    background-color: white;
     display: flex;
+    box-shadow: 0px 0px 2px 1px gray;
+}
+.player-details{
+    display: flex;
+    flex-direction: column;
+}
+.player-list img{
+    width: 120px;
+    height: 143px;
+    padding: 15px 15px 10px 15px;
+}
+.player-list h3{
+    padding-top: 7px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 28px;
+    color: #0f132b;
+    margin: 0;
+}
+.player-list p{
+    padding: 15px;
+    margin: 0;
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: justify;
+    margin-top: -5px;
 }
 
-.mid-topLeft {
-    width: 45%;
-    height: 420px;
-  
-    margin-left: 10%;
-    font-size: 2em;
+/*Footer  */
+
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 110px;
+    width: 300px;
+    padding-top: 40px;
 }
 
-.button {
-        background-color: #E02C6D; 
-        border: none;
+ul {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0px;
+}
+ul li{
+    display: flex;
+    padding: 8px;
+}
+ul li a{
+    text-decoration: none;
+    color: #E02C6D;
+    font-size: 32px;
+}
+ul li a:hover{
+    color: #2D25A0;
+}
+
+/* copyright css */
+
+.copyright p{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+
+/* =====================
+
+
+Mobile Responsive Section
+
+
+========================
+*/
+
+@media only screen and (max-width: 500px) {
+        .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    .banner{
+        background-color: #2D25A0;
+        height: 695px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }  
+    .last-banner{
+        background-color: #2D25A0;
+        height: 815px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .last-banner h1{
         color: white;
-        padding: 10px 22px;
-        text-align: center;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 50px;
+        margin: 0px;
+        padding-bottom: 27px;
+    }
+    .leftcontent{
+        width: 60%;
+        padding-left: 16px;
+        padding-top: 112px;
+        padding-right: 66px;
+    }
+    .leftcontent h1{
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        margin: 0px;
+        padding-bottom: 27px;
+    }
+    .leftcontent a{
+        width: 170px;
+        height: 50px;
+        padding: 10px 24px 10px 24px;
+        background-color: #E02C6D;
+        color: white;
         text-decoration: none;
-        display: inline-block;
         font-size: 16px;
-        cursor: pointer;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-      }
+    
+    }
+    .leftcontent i{
+     padding-left: 10px;
+    }
+ 
+    .rightcontent {
+        width: 40%;
+        padding-top: 50px;
+        display: flex;
+    }
+    .rightcontent img {
+        width: 329px;
+        height: 260px;
+        margin: 0px -16px -50px -16px;
+    }
+}
 
-.mid-topRight {
-    width: 45%;
-    height: 520px;
-    background-position-x: 60px;
+
+@media only screen and (max-width: 500px) {
+    .ranking{
+        padding-top: 40px;
+    }
+    .players-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        grid-gap:25px;
+    }
+    .players {
+        width: 330px;
+        height: 554px;
+        box-shadow: 0px 0px 2px 1px gray;
+        margin-right: 10px;
+    }
 }
-.mid-topRight img{
-    width: 62%;
-    height: 320px;
-    margin-left: 160px;
-    margin-top: 30px;
+
+/* ==================
+ei 
+jaygate kal kaj
+korbo
+===================== */
+
+
+@media only screen and (max-width: 500px) {
+    .more-ranking h1{
+        font-size: 20px;
+    }
+    .news-container{
+        padding-top: 70px;
+    }
+    .more-players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player-list {
+        width: 91%;
+        height: 135px;
+        margin-left: 15px;
+    }
+    .player-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .player-list img{
+        width: 85px;
+        height: 88px;
+        padding: 15px 15px 10px 10px;
+    }
+    .player-list h3{
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-bottom: 13px;
+        font-size: 20px;
+        margin: 0;
+    }
+    .player-list p{
+        padding-left: 0;
+        padding-right: 10px;
+        margin: 0;
+        font-size: 12px;
+        margin-top: -28px;
+        line-height: 1.ch;
+    }
 }
+
+@media only screen and (max-width: 500px) {
+.logo img {
+	height: 65px;
+    width: 240px;
+	padding-top: 40px;
+	padding-right: 35px;
+}
+
+}
+
